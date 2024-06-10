@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt vé du lịch</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="libs/angular.min.js"></script>
+</head>
+
+<body ng-controller="myController">
+  <div class="container-fluid">
+  
+    <header style="text-align: center;">
+      <h1>{{ title }}</h1>
+    </header>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <section>
+          <form>
+            <div class="form-group">
+              <label for="origin">Điểm khởi hành:</label>
+              <input type="text" class="form-control" id="origin">
+            </div>
+            <div class="form-group">
+              <label for="destination">Điểm đến:</label>
+              <input type="text" class="form-control" id="destination">
+            </div>
+            <div class="form-group">
+              <label for="date">Ngày đi:</label>
+              <input type="date" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+              <label for="fullName">Họ và tên:</label>
+              <input type="text" class="form-control" id="fullName">
+            </div>
+            <div class="form-group">
+              <label for="cccd">CCCD:</label>
+              <input type="text" class="form-control" id="cccd">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="gender">Giới tính:</label>
+              <select class="form-control" id="gender">
+                <option>Nam</option>
+                <option>Nữ</option>
+                <option>Khác</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="phone">Số điện thoại:</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+            <div class="form-group">
+              <label for="birthdate">Ngày sinh:</label>
+              <input type="date" class="form-control" id="birthdate">
+            </div>
+            <div class="form-group">
+              <label for="luggage">Hành lý:</label>
+              <input type="text" class="form-control" id="luggage">
+            </div>
+            <div class="form-group">
+              <label for="paymentMethod">Hình thức thanh toán:</label>
+              <select class="form-control" id="paymentMethod">
+                <option>Thanh toán khi nhận vé</option>
+                <option>Chuyển khoản ngân hàng</option>
+                <option>Thanh toán qua ví điện tử</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Đặt vé</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <br>
+    <footer>
+      <p>&copy; 2024 Hệ thống đặt vé máy bay</p>
+    </footer>
+  </div>
+  <script src="libs/app.js"></script>
+</body>
+
+</html>

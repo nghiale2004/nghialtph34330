@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt vé du lịch</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="libs/angular.min.js"></script>
+  <script src="libs/app.js"></script>
+</head>
+<body ng-controller="myController">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <img src="img/black-logo.webp" alt="" class="mr-auto">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="Home.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="DatVe.html">Đặt Vé</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html">Đăng nhập</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video class="d-block w-100 vh-100" autoplay loop muted>
+              <source src="img/Mixivivuduthuyen.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="rounded p-3">
+      <div class="container">
+        <div class="row section-header">
+          <div class="col-md-6">
+            <h2>{{banner}}</h2>
+          </div>
+          <div class="col-md-6">
+            <p>Tận hưởng sự xa hoa và đẳng cấp tối đa trên máy bay mới nhất và phổ biến nhất. Khám phá một hành trình
+              tuyệt vời đưa bạn vào thế giới của sự sang trọng, tiện nghi và trải nghiệm không thể quên.</p>
+          </div>
+        </div>
+        <div class="row d-flex flex-row align-items-stretch">
+          <div class="col-md-4">
+            <div class="product">
+              <img src="img/anh1.webp" alt="Hình ảnh minh họa" class="img-fluid img-max-height">
+              <p>Từ: Hanoi</p>
+              <p>Đến: Ho Chi Minh City</p>
+              <p>Khởi hành: 14/03/2024</p>
+              <p>Giờ khởi hành: 08:00 AM</p>
+              <div class="d-flex justify-content-between">
+                <span class="bg-danger text-light rounded p-2">Giá: 4.000.000VND/Người</span>
+                <button class="btn btn-primary">Đặt vé</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="product">
+              <img src="img/anh2.jpg" alt="Hình ảnh minh họa" class="img-fluid img-max-height">
+              <p>Từ: Hanoi</p>
+              <p>Đến: Seoul</p>
+              <p>Khởi hành: 15/03/2024</p>
+              <p>Giờ khởi hành: 13:00 AM</p>
+              <div class="d-flex justify-content-between">
+                <span class="bg-danger text-light rounded p-2">Giá: 14.000.000VND/Người</span>
+                <button class="btn btn-primary">Đặt vé</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product">
+              <img src="img/anh3.jpg" alt="Hình ảnh minh họa" class="img-fluid img-max-height">
+              <p>Từ: Hanoi</p>
+              <p>Đến: Japan</p>
+              <p>Khởi hành: 17/03/2024</p>
+              <p>Giờ khởi hành: 19:00 AM</p>
+              <div class="d-flex justify-content-between">
+                <span class="bg-danger text-light rounded p-2">Giá:17.000.000VND/Người</span>
+                <button class="btn btn-primary">Đặt vé</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flight-row"></div>
+        <div class="row  d-flex flex-row align-items-stretch">
+          <div class="col-md-4">
+            <div class="product">
+              <img src="img/anh1.webp" alt="Hình ảnh minh họa" class="img-fluid img-max-height">
+              <p>Từ: Japan</p>
+              <p>Đến: Seoul</p>
+              <p>Khởi hành: 14/03/2024</p>
+              <p>Giờ khởi hành: 08:00 AM</p>
+              <div class="d-flex justify-content-between">
+                <span class="bg-danger text-light rounded p-2">Giá: 7.000.000VND/Người</span>
+                <button class="btn btn-primary">Đặt vé</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product">
+              <img src="img/anh2.jpg" alt="Hình ảnh minh họa" class="img-fluid img-max-height">
+              <p>Từ: Thai Lan</p>
+              <p>Đến: Nga</p>
+              <p>Khởi hành: 15/03/2024</p>
+              <p>Giờ khởi hành: 13:00 AM</p>
+              <div class="d-flex justify-content-between">
+                <span class="bg-danger text-light rounded p-2">Giá: 8.000.000VND/Người</span>
+                <button class="btn btn-primary">Đặt vé</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product">
+              <img src="img/anh3.jpg" alt="Hình ảnh minh họa" class="img-fluid img-max-height">
+              <p>Từ: Úc </p>
+              <p>Đến: VietNam</p>
+              <p>Khởi hành: 17/03/2024</p>
+              <p>Giờ khởi hành: 19:00 AM</p>
+              <div class="d-flex justify-content-between">
+                <span class="bg-danger text-light rounded p-2">Giá:17.000.000VND/Người</span>
+                <button class="btn btn-primary">Đặt vé</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-destinations">
+      <div class="container">
+        <div class="row section-header">
+          <h2>Điểm đến nổi bật</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="destination">
+              <img src="img/phap.jpg" alt="Điểm đến 1">
+              <h4>Paris, France</h4>
+              <p>Khám phá vẻ đẹp lãng mạn của Paris với tháp Eiffel, Lầu Năm Góc và Louvre.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="destination">
+              <img src="img/tokyo.webp" alt="Điểm đến 2">
+              <h4>Tokyo, Japan</h4>
+              <p>Trải nghiệm văn hóa độc đáo và công nghệ tiên tiến tại Tokyo, thành phố sôi động của Nhật Bản.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="destination">
+              <img src="img/usa.jpg" alt="Điểm đến 3">
+              <h4>New York City, USA</h4>
+              <p>Khám phá cuộc sống đô thị sôi động và thị trấn nổi tiếng của New York.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Hệ thống đặt vé máy bay</p>
+    </footer>
+  </div>
+ 
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title'); ?>
+ Chi tiết vé máy bay:  <?php echo \htmlentities($flight['Origin']??'', ENT_QUOTES, 'UTF-8', false); ?> - <?php echo \htmlentities($flight['Destination']??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('content'); ?>
+ <h1>Chi tiết người dùng:  <?php echo \htmlentities($flight['Origin']??'', ENT_QUOTES, 'UTF-8', false); ?> - <?php echo \htmlentities($flight['Destination']??'', ENT_QUOTES, 'UTF-8', false); ?></h1>
+<br>
+<br>
+<br>
+<br>
+
+ <table class="table table-striped">
+ <thead>
+ <tr>
+ <th>Trường</th>
+ <th>Giá trị</th>
+ </tr>
+ </thead>
+ <tbody>
+
+ <?php $__currentLoopData = $flight; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $field => $value): $loop = $this->incrementLoopIndices();  ?>
+ <tr>
+ <td><?php echo \htmlentities($field??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ <td><?php echo \htmlentities($value??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ </tr>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+
+ </tbody>
+ </table>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.master'); } ?>

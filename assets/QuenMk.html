@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quên mật khẩu</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="libs/angular.min.js"></script>
+  <script src="libs/app.js"></script>
+</head>
+<body ng-controller="forgotPasswordController">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3 class="text-center">Quên mật khẩu</h3>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" ng-model="forgot.email">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" ng-click="resetPassword()">Gửi email đặt lại mật khẩu</button>
+            </form>
+          </div>
+          <div class="card-footer text-center">
+            <a href="Login.html">Trở về đăng nhập</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

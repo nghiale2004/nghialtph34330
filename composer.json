@@ -1,0 +1,16 @@
+{
+
+    "name": "admin/asm",
+    "autoload": {
+        "psr-4": {
+            "Admin\\Asm\\": "src/"
+        }
+    },
+    "require": {
+        "eftec/bladeone": "^4.13",
+        "doctrine/dbal": "^4.0",
+        "bramus/router": "~1.6",
+        "rakit/validation": "^1.4",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

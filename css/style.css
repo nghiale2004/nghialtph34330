@@ -1,0 +1,112 @@
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+
+}
+
+.navbar-brand {
+    margin-right: 30px;
+}
+
+.img-max-height {
+    max-height: 100%;
+}
+
+#carouselExampleSlidesOnly {
+    margin-bottom: 30px;
+    /* Khoảng cách từ phần header carousel xuống phần Tận Hưởng Chuyến Bay */
+}
+
+/* CSS cho phần Tận Hưởng Chuyến Bay */
+.section-header {
+    background: linear-gradient(to right, #1abc9c, #3498db);
+    /* Sử dụng gradient màu xanh */
+    padding: 20px;
+    /* Thêm padding để tạo khoảng cách */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* Bo tròn các góc */
+}
+
+.section-header h2 {
+    color: #fff;
+    /* Màu chữ trắng */
+    font-weight: bold;
+    /* Chữ in đậm */
+}
+
+/* Tùy chỉnh nội dung */
+.section-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+.product {
+    height: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    /* hoặc bất kỳ giá trị nào bạn muốn */
+    object-fit: cover;
+}
+
+.flight-row {
+    margin-bottom: 20px;
+    /* Adjust as needed */
+}
+
+/* Style for featured destinations section */
+.featured-destinations {
+    margin-top: 50px;
+
+}
+
+.featured-destinations .destination img {
+    height: 200px;
+
+}
+
+.destination {
+    text-align: center;
+    margin-bottom: 30px;
+    /* Adjust as needed */
+    margin-left: 15px;
+    /* Add margin between columns */
+    margin-right: 15px;
+    /* Add margin between columns */
+}
+
+.destination img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination h4 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.destination p {
+    font-size: 16px;
+    color: #666;
+}
+footer {
+    background-color: #f8f9fa;
+    /* Chọn màu tương tự với thanh điều hướng */
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
